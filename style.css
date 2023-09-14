@@ -1,0 +1,538 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62, 5%;
+
+
+}
+
+/*header*/
+
+.container-menu {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 10px;
+
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-menu .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.container-menu .list-menu li a {
+    color: white;
+    padding: 3rem 1rem 2rem 1rem;
+    font-size: 1.0rem;
+
+    font-weight: 300;
+    transition: all 200ms ease-in;
+}
+
+.container-menu .list-menu li a:hover {
+    background-color: #3333;
+    border-bottom: 4px solid rgb(235, 68, 68);
+    color: rgb(191, 78, 78);
+
+}
+
+
+.content-section {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(assets/back1.jpg);
+
+    background-size: cover;
+
+    background-position-y: 50px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.container h1 {
+    color: rgb(225, 6, 6);
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.container h2 {
+    color: rgb(243, 226, 226);
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.bnt {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bnt button {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(239, 4, 4);
+    color: black;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: 3rem;
+    border: none;
+    transition: all 400ms ease-in;
+}
+
+.bnt button:hover {
+    border: 3 px solid rgb(239, 4, 4);
+    background-color: transparent;
+    color: red;
+
+}
+
+/*sobre nos*/
+
+.sobre-nos {
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+.sobre-nos img {
+    width: 50%;
+    height: 50%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 3px solid rgb(214, 17, 17);
+
+
+}
+
+.main-sobre {
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+}
+
+.container-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rem;
+    margin-left: 124px;
+}
+
+
+.container-sobre h2 {
+
+    font-size: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+.container-sobre p {
+    text-align: center;
+
+    width: 500px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+
+}
+
+/*Cardapio*/
+
+.cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardapio h2 {
+    font-size: 4rem;
+    color: #e80606;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-top: 2rem;
+}
+
+.itens-cardapio {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info {
+    background-color: rgb(230, 175, 175);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-cardapio .info h3 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+.itens-cardapio .info h4 {
+
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio .info h4 span {
+
+    color: #f73131;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio div {
+    background-color: #0e0b0b;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+.itens-cardapio .info .pedir {
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #f73131;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: all 200ms ease-in;
+}
+
+.itens-cardapio .info .pedir:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: Center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    color: #e80606;
+    text-transform: uppercase;
+
+}
+
+
+
+
+.contatos-secao a {
+    cursor: pointer;
+    margin-right: 2rem;
+    color: white;
+
+    transition: all 200ms ease-in;
+
+}
+
+.contatos-secao a:hover {
+
+    color: #e80606;
+
+}
+
+
+
+footer {
+    height: 50px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 1.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1336px) {
+    .itens-cardapio {
+
+
+        grid-template-columns: repeat(2, minmax(250px, 550px))
+    }
+}
+
+@media(max-width:1198px) {
+    .main-sobre {
+        display: block;
+    }
+
+    .container-menu {
+        flex-direction: column-reverse;
+
+
+    }
+
+    .img-sobre img {
+        margin-top: 20px;
+        width: 70%;
+
+
+    }
+
+    .sobre-nos {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+
+    .container-sobre {
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+}
+
+
+
+@media(max-width:726px) {
+    .itens-cardapio {
+
+        grid-template-columns: repeat(1, minmax(250px, 400px))
+    }
+
+    .itens-cardapio .info h4 {
+
+        margin-right: 98px;
+        display: flex;
+    }
+
+    .container-menu .list-menu {
+
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-media {
+        width: 40px;
+        height: 30px;
+    }
+
+    .container-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 10;
+
+
+    }
+
+    .container-menu .logo {
+        position: absolute;
+        left: 40px;
+        top: 9px;
+    }
+
+    .menu-media {
+
+        position: absolute;
+        right: 50px;
+        top: 10px;
+
+
+    }
+
+
+
+    .content.on .logo {
+        display: none;
+    }
+
+
+    .content.on .list-menu {
+        display: block;
+
+    }
+
+    .content.on .list-menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .content.on .menu-media .one {
+        transform: rotate(50deg) translate(8px, -7px);
+    }
+
+    .content.on .menu-media .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-media .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+}
+
+@media(max-width:640px) {
+
+    .bnt {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .container-sobre p {
+        text-align: center;
+        width: 280px;
+        margin-right: 70px;
+    }
+
+    .container-sobre h2 {
+        margin-right: 70px;
+        text-align: center;
+    }
+
+    .img-sobre img {
+        margin-left: 91px;
+
+    }
+
+    footer h4 {
+        text-align: center;
+    }
+
+}
+
+@media(max-width:375px) {
+
+    .img-sobre img {
+        margin-left: 77px;
+
+    }
+
+    .container-sobre p {
+
+        margin-right: 120px;
+    }
+
+    .container-sobre h2 {
+        margin-right: 120px;
+
+    }
+}
