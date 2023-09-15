@@ -1,7 +1,7 @@
 let show = true
 
 
-const menuContainer = document.querySelector('.content')
+const menuContainer = document.querySelector('.container-menu')
 
 const menuMedia = menuContainer.querySelector('.menu-media')
 
