@@ -426,12 +426,9 @@ footer {
     }
 
     .menu-media {
-
         position: absolute;
         right: 65px;
         top: '';
-
-
     }
 
     .container-menu.on {
@@ -450,7 +447,7 @@ footer {
     }
 
     .container-menu .logo {
-        position: fixed;
+        position: absolute;
         left: 45px;
         top: 25px;
     }
@@ -475,14 +472,6 @@ footer {
         text-align: center;
         display: flex;
         justify-content: center;
-
-    }
-
-
-
-    .container-menu.on .list-menu li a {
-
-        display: block;
 
     }
 
